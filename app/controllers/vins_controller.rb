@@ -8,7 +8,11 @@ class VinsController < ApplicationController
     @vin = Vin.new(vin_params)
     @vin.save
 
-    redirect_to '/'
+    render 'vins/checkout'
+  end
+
+  def checkout
+    @vin
   end
 
   def vin_params
