@@ -1,0 +1,4 @@
+<%= simple_form_for @vin do |f| %>
+  <%= f.input :vin_number, input_html: { maxlength: 17 } %>
+  <%= f.button :submit %>
+<% end %>

@@ -14,3 +14,12 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+*.iml
+.idea
+/public/assets
+
+Gemfile.lock
+
+/public/sitemap*
+
+/db/schema.rb
