@@ -1,0 +1,2 @@
+module VinsHelper
+end
