@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= content_for?(:title) ? yield(:title) : "VinCompare" %></title>
+  <meta name="description" content="<%= content_for?(:title) ? yield(:title) : "VinCompare" %>">
+  <%= csrf_meta_tags %>
+
+  <!-- Meta -->
+  <link rel="shortcut icon" href="https://d343nkq91ijxgw.cloudfront.net/images/branding/favicon.png">
+  <link rel="logo" type="image/svg" href="https://d343nkq91ijxgw.cloudfront.net/images/logo.svg">
+  <meta name="og:title" content="A new standard in photo proofing - Plover">
+  <meta name="og:type" content="website">
+  <meta name="og:url"  content="http://www.vincompare.com">
+  <meta name="og:image" content="https://d343nkq91ijxgw.cloudfront.net/images/logo.svg">
+
+  <!-- Styles -->
+  <%= stylesheet_link_tag "application", :media => "all" %>
+
+  <!-- For third-generation iPad with high-resolution Retina display: -->
+  <!-- Size should be 144 x 144 pixels -->
+  <%= favicon_link_tag 'apple-touch-icon-144x144-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '144x144' %>
+
+  <!-- For iPhone with high-resolution Retina display: -->
+  <!-- Size should be 114 x 114 pixels -->
+  <%= favicon_link_tag 'apple-touch-icon-114x114-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '114x114' %>
+
+  <!-- For first- and second-generation iPad: -->
+  <!-- Size should be 72 x 72 pixels -->
+  <%= favicon_link_tag 'apple-touch-icon-72x72-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png', :sizes => '72x72' %>
+
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <!-- Size should be 57 x 57 pixels -->
+  <%= favicon_link_tag 'apple-touch-icon-precomposed.png', :rel => 'apple-touch-icon-precomposed', :type => 'image/png' %>
+
+  <!-- For all other devices -->
+  <!-- Size should be 32 x 32 pixels -->
+  <!--<#%= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>-->
+
+  <!-- Javascripts -->
+  <%= javascript_include_tag "application" %>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<!-- BEGIN Content -->
+<div class="content">
+
+  <div class="lead">
+    <div class="wrap">
+      <header>
+        <!--<a href="/"><img src="https://d343nkq91ijxgw.cloudfront.net/images/logo.svg" id="logo" height="60" width="60"></a>-->
+        <span class="glyphicon glyphicon-check logo"></span>
+      </header>
+
+      <h1>Finding the best valued Vehicle History Report?</h1>
+      <h2><em>Compare them side by side.</em> Selecting the best one is simple.</h2>
+
+      <div class="call-to-action">
+        <div class="signup-form">
+          <%= yield %>
+        </div>
+      </div>
+
+      <div id="preview">
+
+        <%= image_tag ('nice-car.png'), height: "160", class: 'pull-left' %>
+        <%= image_tag ('audi-r8-new.png'), height: "160", class: 'pull-right', style: 'padding-bottom:10px;' %>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="points wrap cf">
+
+  </div>
+
+</div>
+<!-- END Content -->
+
+<!-- BEGIN Footer -->
+
+<footer>
+  <div class="wrap">
+    <div class="column">
+      <%= link_to 'Home', root_path %>
+      <%= link_to 'About', page_path('About') %>
+      <%= link_to 'Privacy', page_path('Privacy') %>
+      <%= link_to 'Terms', page_path('Terms') %>
+    </div>
+
+    <div class="column last">
+      <p>Created as a free tool for all. <a href="http://vincompare.com" class="orange">© VinCompare, 2013.</a></p>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>

@@ -1,4 +1,6 @@
-<%= simple_form_for @vin do |f| %>
-  <%= f.input :vin_number, input_html: { maxlength: 17 } %>
-  <%= f.button :submit %>
+<%= form_for @vin, method: :post do |f| %>
+  <%= f.text_field :vin_number, placeholder: 'Enter VIN Number', required: 'true' %>
+  <button type="submit">
+    <span class="glyphicon glyphicon-search white icon"></span>
+  </button>
 <% end %>

@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/anjlab/bootstrap-rails.git
-  revision: a3cb84e953eebf3e432e06dc6185f168e738b7d5
+  revision: 83a4ce85cdf5edb6d0dd6e51ad37e3b649576ca0
   specs:
     anjlab-bootstrap-rails (3.0.0.2)
       railties (>= 3.0)
@@ -35,8 +35,6 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.0)
     atomic (1.1.13)
-    bootstrap-sass (2.2.2.0)
-      sass (~> 3.2)
     builder (3.1.4)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
@@ -47,10 +45,7 @@ GEM
     coffee-script-source (1.6.3)
     erubis (2.7.0)
     execjs (2.0.0)
-    flatui-rails (0.0.4)
-      bootstrap-sass (= 2.2.2)
-      railties (>= 3.1)
-      sass-rails (>= 3.2.0)
+    high_voltage (1.2.4)
     hike (1.2.3)
     i18n (0.6.5)
     jbuilder (1.5.0)
@@ -97,7 +92,6 @@ GEM
     sdoc (0.3.20)
       json (>= 1.1.3)
       rdoc (~> 3.10)
-    simple_form (1.4.1)
     sprockets (2.10.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -117,6 +111,8 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
+    turbolinks (1.3.0)
+      coffee-rails
     tzinfo (0.3.37)
     uglifier (2.1.2)
       execjs (>= 0.3.0)
@@ -128,13 +124,13 @@ PLATFORMS
 DEPENDENCIES
   anjlab-bootstrap-rails!
   coffee-rails (~> 4.0.0)
-  flatui-rails
+  high_voltage
   jbuilder (~> 1.2)
   jquery-rails
   mysql2
   rails (= 4.0.0)
   sass-rails (~> 4.0.0)
   sdoc
-  simple_form
   therubyracer
+  turbolinks
   uglifier (>= 1.3.0)

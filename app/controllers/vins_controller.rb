@@ -1,5 +1,7 @@
 class VinsController < ApplicationController
 
+  layout 'vins'
+
   def new
     @vin = Vin.new
   end
