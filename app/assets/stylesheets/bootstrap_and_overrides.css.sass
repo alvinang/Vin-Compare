@@ -4,5 +4,37 @@
 
 .lead
   padding-bottom: 30px
+  margin-bottom: 10px !important
+
+.report-logo
+  margin-bottom: 20px
+  .row
+    padding-top: 10px
+  .carfax-logo
+    margin-top: 5px
+
+@media (min-width: 1200px)
+  .home-vehicle-right
+    padding-bottom: 10px
+    margin-right: 95px
+
+@media (max-width: 992px)
+  #preview
+    display: none
+
+@media (max-width: 768px)
+  .report-logo, #preview
+    display: none
+  .lead
+    border-bottom: none !important
+
+table th, td
+  text-align: center
+
+table td:first-child
+  text-align: left
+
+footer
+  background-color: #f4f3f3
 
 @import "twitter/bootstrap"

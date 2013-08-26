@@ -10,10 +10,10 @@ class VinsController < ApplicationController
     @vin = Vin.new(vin_params)
     @vin.save
 
-    render 'vins/checkout'
+    render 'vins/compare'
   end
 
-  def checkout
+  def compare
     @vin
   end
 

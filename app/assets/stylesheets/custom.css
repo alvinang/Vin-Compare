@@ -255,7 +255,7 @@ footer a.orange {
 }
 
 body {
-    background-color: #f4f3f3;
+    background-color: #fff;
 }
 
 form,
@@ -301,11 +301,6 @@ h2 {
 h2 em {
     color: #3E4956;
     font-style: normal;
-}
-
-.wrap {
-    margin: 0 auto;
-    width: 990px;
 }
 
 .content {
@@ -405,33 +400,9 @@ h2 em {
 
 
 /* Points */
-.points {
-    padding: 75px 0;
-}
 
-.point {
-    float: left;
-    margin-bottom: 50px;
-    margin-right: 5%;
-    width: 30%;
-}
-
-.last .point {
+.last {
     margin-bottom: 0;
-}
-
-.point:nth-child(3n) {
-    margin-right: 0;
-}
-
-.point h3 {
-    background: transparent url('https://d343nkq91ijxgw.cloudfront.net/images/marketing/homepage/point-icons.png?4c801c591234') no-repeat left top;
-    color: #3E4956;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 40px;
-    margin-bottom: 5px;
-    padding-left: 45px;
 }
 
 .design h3 {
@@ -451,13 +422,6 @@ h2 em {
 }
 .management h3 {
     background-position: left -205px;
-}
-
-.point p {
-    color: #9099A3;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.75;
 }
 
 /* Animations */
