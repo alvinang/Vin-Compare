@@ -153,15 +153,6 @@ footer {
     padding: 50px;
 }
 
-footer .column {
-    float: left;
-    width: 50%;
-}
-
-footer .column.last {
-    text-align: right;
-}
-
 footer p {
     color: #9099A3;
     font-size: 14px;
@@ -326,7 +317,7 @@ h2 em {
 }
 
 .lead header {
-    margin: 75px 0 50px 0;
+    margin: 60px 0 40px 0;
     position: relative;
     text-align: center;
 }
