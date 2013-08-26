@@ -1,10 +1,10 @@
-<%= render :partial => 'compare_header' %>
+<%= render :partial => 'layouts/navbar' %>
 
 <main role="main">
   <div class="container">
     <div class="lead">
       <h1>Comparison for VIN: <%= @vin.vin_number %></h1>
-      <%= render :partial => 'comparison_table' %>
+      <%= render :partial => 'vins/comparison_table' %>
     </div>
   </div>
 </main>
