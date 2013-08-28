@@ -15,3 +15,7 @@
 .progress.loading {
     display: block !important;
 }
+
+tr td a:hover {
+    text-decoration: none
+}
