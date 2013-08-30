@@ -3,16 +3,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><%= content_for?(:title) ? yield(:title) : "VinCompare" %></title>
-  <meta name="description" content="<%= content_for?(:title) ? yield(:title) : "VinCompare" %>">
+  <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "VinCompare - join us in our fight agaist vehicle fraud" %>">
   <%= csrf_meta_tags %>
 
   <!-- Meta -->
-  <link rel="shortcut icon" href="https://d343nkq91ijxgw.cloudfront.net/images/branding/favicon.png">
-  <link rel="logo" type="image/svg" href="https://d343nkq91ijxgw.cloudfront.net/images/logo.svg">
-  <meta name="og:title" content="A new standard in photo proofing - Plover">
+  <%= favicon_link_tag '/assets/favicon.png' %>
+  <meta name="og:title" content="Compare VIN Reports to buy the best">
   <meta name="og:type" content="website">
   <meta name="og:url"  content="http://www.vincompare.com">
-  <meta name="og:image" content="https://d343nkq91ijxgw.cloudfront.net/images/logo.svg">
 
   <!-- Styles -->
   <%= stylesheet_link_tag "application", :media => "all" %>
