@@ -15,3 +15,7 @@ gem 'high_voltage'
 gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
     :github => 'anjlab/bootstrap-rails'
 
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
