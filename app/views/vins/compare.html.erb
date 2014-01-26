@@ -1,11 +1,11 @@
-<%= render :partial => 'layouts/navbar' %>
+<%= render 'layouts/navbar' %>
 
 <main role="main">
   <div class="container">
     <div class="lead">
       <h2>Checking sources to compare VIN <%= @vin.vin_number %>...</h2>
       <div class="progress"></div>
-      <%= render :partial => 'vins/comparison_table' %>
+      <%= render 'vins/comparison_table' %>
     </div>
   </div>
 </main>

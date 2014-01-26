@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<%= render :partial => 'layouts/head' %>
+<%= render 'layouts/head' %>
 
 <body>
-<%= render :partial => 'layouts/navbar' %>
+<%= render 'layouts/navbar' %>
 
+<%= render 'layouts/messages %>
 <%= yield %>
 
-<%= render :partial => 'layouts/footer' %>
+<%= render 'layouts/footer' %>
 </body>
 </html>

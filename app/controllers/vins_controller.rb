@@ -12,6 +12,7 @@ class VinsController < ApplicationController
       @vin.save
       render 'vins/compare'
     else
+      flash[:notice] = "You entered an invalid VIN"
       redirect_to root_path
     end
   end

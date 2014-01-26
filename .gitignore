@@ -18,7 +18,6 @@
 .idea
 /public/assets
 /config/database.yml
-Gemfile.lock
 
 /public/sitemap*
 
