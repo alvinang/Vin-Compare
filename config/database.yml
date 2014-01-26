@@ -32,9 +32,11 @@ test:
   host: localhost
 
 production:
-  adapter: postgresql
-  encoding: unicode
+  adapter: mysql2
+  encoding: utf8
   database: vincompare_production
   pool: 5
-  username: vincompare
-  password:
+  username: root
+  password: kwanleong
+  socket: /tmp/mysql.sock
+  host: localhost
