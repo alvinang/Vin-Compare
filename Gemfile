@@ -11,8 +11,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'high_voltage'
-gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
-    :github => 'anjlab/bootstrap-rails'
+gem 'bootstrap-sass', '~> 3.1.0'
 
 group :development do
   gem 'better_errors'
