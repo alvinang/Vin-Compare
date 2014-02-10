@@ -32,8 +32,3 @@ module CheckVin::VinValidator
     false
   end
 end
-
-
-
-
-
