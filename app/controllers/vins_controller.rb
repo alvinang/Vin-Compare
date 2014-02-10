@@ -8,11 +8,12 @@ class VinsController < ApplicationController
 
   def create
     @vin = Vin.new(vin_params)
-    if CheckVin::VinValidator.check_num?(@vin.vin_number) == true
+    begin
+      CheckVin::VinValidator.check_num?(@vin.vin_number)
       @vin.save
       render 'vins/compare'
-    else
-      flash[:notice] = "#{@vin.vin_number} is not a valid VIN"
+    rescue ArgumentError => e
+      flash[:notice] = e.message
       redirect_to root_path
     end
   end

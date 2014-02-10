@@ -3,20 +3,25 @@
 ### Summary
 
 URL: [Vin Compare](http://vincompare.com)
-This app is created to compare vin reports. App uses:
+This app is created to compare vin reports. Work in progress to utilize Edmunds API to provide vehicle resource and information.
+This App's stack is as follows:
 
-* [Bootstrap Rails gem](https://github.com/anjlab/bootstrap-rails)
 * Rails 4.0.0 and Ruby 2.1.0
 * Heroku to host application
+* Postgresql in production
 
 ### Completed
 #### Version 0.1
 
-* Store VIN in db
+* Able to store VIN in db
 * Two page only -> Home, Result
 * Compares NMVTIS report, CarFax and AutoCheck
 * Add jQuery in result page
-* Added vin_validator to validate VIN (user input)
+* Add vin_validator to validate VIN (user input)
+
+#### Version 0.2
+
+* Updated to bootstrap 3.1.0 maintained by 
 
 ### Work in Progress
 
@@ -32,7 +37,4 @@ This app is created to compare vin reports. App uses:
 #### Version 0.4
 
 * Add Edmunds articles etc for more information related to that specific VIN
-
-### Future
-
-* Create iphone App to compare 2 decoded VIN
+* Find vehicle listing API to provide relevant vehicle close by
