@@ -12,11 +12,13 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'high_voltage'
 gem 'bootstrap-sass', '~> 3.1.0'
+gem 'bcrypt-ruby', '~> 3.1.2', require: 'bcrypt'
 
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'mysql2'
+  gem 'annotate'
 end
 
 group :production do

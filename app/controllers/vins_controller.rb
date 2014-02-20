@@ -14,7 +14,7 @@ class VinsController < ApplicationController
       render 'vins/compare'
     rescue ArgumentError => e
       flash[:notice] = e.message
-      redirect_to root_path
+      redirect_to root_url
     end
   end
 
