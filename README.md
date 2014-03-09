@@ -10,6 +10,9 @@ This App's stack is as follows:
 * Heroku to host application
 * Postgresql in production
 
+TODO:
+Application page for user info, add login/logout in navbar
+
 ### Completed
 #### Version 0.1
 
@@ -21,12 +24,14 @@ This App's stack is as follows:
 
 #### Version 0.2
 
-* Updated to bootstrap 3.1.0 maintained by 
+* Updated to bootstrap 3.1.0 
+* Added authentication 
 
 ### Work in Progress
 
 #### Version 0.2
 
+* Complete new user and session form
 * Refactor code and add testing
 * Use JS to add fancier vin check
 

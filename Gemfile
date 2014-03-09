@@ -12,7 +12,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'high_voltage'
 gem 'bootstrap-sass', '~> 3.1.0'
-gem 'bcrypt-ruby', '~> 3.1.2', require: 'bcrypt'
+gem 'bcrypt-ruby', '~> 3.1.2', require: hia
 
 group :development do
   gem 'better_errors'
