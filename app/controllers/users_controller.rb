@@ -2,19 +2,20 @@ class UsersController < ApplicationController
   before_action :require_user, only: [:show]
   
   def new
-    @users = User.all
+    @user = User.new
     render :new
   end
   
   def create
-    @user = User.find(user_params)
+    @user = User.new(user_params)
     
     if @user.save
       login!(@user)            
-      redirect_to user
+      redirect_to root_url
     else
       flash.now[:errors] = @user.errors.messages
       render :new
+    end
   end
   
   def show

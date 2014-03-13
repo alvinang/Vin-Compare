@@ -2,15 +2,16 @@
 <% content_for :description do %>Join us in our fight again vehicle fraud<% end %>
 <main role="main">
   <div class="container">
-    <%= form_for @user do |f| %>
+    <%= form_for @user, url: { action: 'create' } do |f| %>
+    
       <%= f.label :email %>
-      <%= f.email :email %><br>
+      <%= f.email_field :email %><br>
       
       <%= f.label :password %>
-      <%= f.password :password %><br>
+      <%= f.password_field :password %><br>
       
       <%= f.submit %>
-    <% end %>
+    <% end %> 
   </div>
 </main>
 

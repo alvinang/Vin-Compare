@@ -21,6 +21,7 @@ group :development, :test do
   gem 'binding_of_caller'
   gem 'mysql2'
   gem 'annotate'
+  gem 'quiet_assets'
 end
 
 group :production do

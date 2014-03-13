@@ -3,6 +3,6 @@ Vincompare::Application.routes.draw do
   
   resources :vins
   resources :users, only: [:new, :create, :show]
-  resources :session, only: [:new, :create, :destroy]
+  resource :session, only: [:new, :create, :destroy]
   
 end
