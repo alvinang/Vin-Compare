@@ -12,9 +12,11 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'high_voltage'
 gem 'bootstrap-sass', '~> 3.1.0'
-gem 'bcrypt-ruby', '~> 3.1.2', require: hia
+gem 'bcrypt'
+gem 'figaro'
+gem 'newrelic_rpm'
 
-group :development do
+group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'mysql2'

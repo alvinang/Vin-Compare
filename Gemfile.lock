@@ -30,7 +30,7 @@ GEM
       rake (>= 0.8.7)
     arel (4.0.2)
     atomic (1.1.14)
-    bcrypt-ruby (3.1.2)
+    bcrypt (3.1.7)
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
@@ -52,6 +52,9 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.0.2)
+    figaro (0.7.0)
+      bundler (~> 1.0)
+      rails (>= 3, < 5)
     high_voltage (2.1.0)
     hike (1.2.3)
     i18n (0.6.9)
@@ -70,6 +73,7 @@ GEM
     minitest (4.7.5)
     multi_json (1.8.4)
     mysql2 (0.3.15)
+    newrelic_rpm (3.7.3.204)
     pg (0.17.1)
     polyglot (0.3.4)
     rack (1.5.2)
@@ -135,15 +139,17 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
-  bcrypt-ruby (~> 3.1.2)
+  bcrypt
   better_errors
   binding_of_caller
   bootstrap-sass (~> 3.1.0)
   coffee-rails (~> 4.0.0)
+  figaro
   high_voltage
   jbuilder (~> 1.2)
   jquery-rails
   mysql2
+  newrelic_rpm
   pg
   rails (= 4.0.0)
   rails_12factor
