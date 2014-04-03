@@ -8,9 +8,9 @@ class VinsController < ApplicationController
 
   def create
     @vin = Vin.new(vin_params)
+    
     begin
-      CheckVin::VinValidator.check_num?(@vin.vin_number)
-      @vin.save
+      @vin.save if @vin.check_vin
       render 'vins/compare'
     rescue ArgumentError => e
       flash[:notice] = e.message
@@ -19,7 +19,6 @@ class VinsController < ApplicationController
   end
 
   def compare
-    @vin
   end
 
   private

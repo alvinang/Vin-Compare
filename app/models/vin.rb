@@ -9,5 +9,9 @@
 #
 
 class Vin < ActiveRecord::Base
+  validates :vin_number, presence: true
 
+  def check_vin
+    CheckVin::VinValidator.check_num?(self.vin_number)
+  end
 end
