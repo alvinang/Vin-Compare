@@ -3,9 +3,13 @@
 <%= render 'layouts/head' %>
 
 <body>
-<%= render 'layouts/navbar' %>
-<%= render 'layouts/login' %>
-<%= render 'layouts/messages' %>
+  <% if current_page?('/') %>
+    <%= render 'layouts/messages' %>
+    <%= render 'layouts/landing' %>
+  <% else %>    
+    <%= render 'layouts/navbar' %>
+    <%= render 'layouts/messages' %>
+  <% end %>  
 
 <%= yield %>
 

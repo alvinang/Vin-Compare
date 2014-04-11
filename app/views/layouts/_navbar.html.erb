@@ -13,6 +13,13 @@
       <ul class="nav navbar-nav">
         <li><%= link_to 'Home', root_path %></li>
         <li><%= link_to 'About', page_path('about') %></li>
+        <% if logged_in? %>
+          <li>Welcome <%= current_user.username %></li>
+          <li><%= button_to 'Log Out', session_url %></li>
+        <% else %>
+          <li><%= link_to 'Sign Up', new_user_url %></li>
+          <li><%= link_to 'Log In', new_session_url %></li>
+        <% end %>
       </ul>
     </nav>
   </div>

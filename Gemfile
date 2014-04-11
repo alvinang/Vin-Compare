@@ -15,17 +15,17 @@ gem 'bootstrap-sass', '~> 3.1.0'
 gem 'bcrypt'
 gem 'figaro'
 gem 'newrelic_rpm'
+gem 'thin'
 
 group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'mysql2'
+  gem 'sqlite3'
   gem 'annotate'
   gem 'quiet_assets'
 end
 
 group :production do
   gem 'pg'
-  gem 'thin'
   gem 'rails_12factor'
 end

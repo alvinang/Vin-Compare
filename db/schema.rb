@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20140220175923) do
     t.datetime "updated_at"
   end
 
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["email"], name: "index_users_on_email", unique: true
 
   create_table "vins", force: true do |t|
     t.string   "vin_number"
