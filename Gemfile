@@ -18,7 +18,7 @@ gem 'newrelic_rpm'
 gem 'thin'
 
 group :development, :test do
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.8.0'
   gem 'binding_of_caller'
   gem 'sqlite3'
   gem 'annotate'
