@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 ruby '2.1.0'
-gem 'rails', '4.0.0'
+gem 'rails', '7.1.5.2'
 
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
@@ -13,7 +13,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'high_voltage'
 gem 'bootstrap-sass', '~> 3.1.0'
 gem 'bcrypt'
-gem 'figaro'
+gem 'figaro', '>= 1.0.0'
 gem 'newrelic_rpm'
 gem 'thin'
 
@@ -21,7 +21,7 @@ group :development, :test do
   gem 'better_errors'
   gem 'binding_of_caller'
   gem 'sqlite3'
-  gem 'annotate'
+  gem 'annotate', '>= 2.6.2'
   gem 'quiet_assets'
 end
 
